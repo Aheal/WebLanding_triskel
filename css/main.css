@@ -1,0 +1,11 @@
+
+#intro {
+	position: relative; 
+	display : table; 
+	width: 100%; 
+	height: auto; 
+	background-image: url(../img/FondoIntro_EquipoAltoTonelaje_AireAcondicionado_nepe.jpg); 
+	background-repeat: no-repeat; 
+	background-position: auto; 
+	
+}
