@@ -1,21 +1,33 @@
 
-body {
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
+html, body {
+  height: 100%;
   font-family: 'Roboto', sans-serif;
+}
+/*Only `section` if watn each section on 100 percent height*/
+section[name="intro"]{
+  height: 100%;
 }
 
 #intro {
-	position: relative; 
-	display : table; 
-	width: 100%; 
-	height: auto; 
-	background-image: url(../img/FondoIntro_EquipoAltoTonelaje_AireAcondicionado_nepe.jpg); 
-	background-repeat: no-repeat; 
-	background-position: center; 
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; 
-} 
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/FondoIntro_EquipoAltoTonelaje_AireAcondicionado_nepe.jpg); 
+  background-repeat: no-repeat; 
+  background-position: top;  
+  background-attachment: fixed;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%; 
+}
 
 #intro:before {
   position: absolute;
@@ -23,7 +35,11 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-} 
+}  
+
+.above-all{
+  z-index: 10000;
+}
 
 
 #intro .intro-body {
@@ -34,17 +50,163 @@ body {
   padding-bottom: 70px;
 }
 
-#intro-image {
-
-}  
-
-#nosotros {
-  background-image: url(..img/Fondo_Nosotros_Recorte.png)
-} 
-
-#nosotros h1 {
-  font-size: 80px;
+#intro .intro-img {
+  opacity: 0.7; 
+  width: 60%;
+  height: auto;
 }
 
+#nosotros { 
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  background-image:  url(../img/Img_Nosotros_01.jpg)  ; 
+  background-repeat: no-repeat; 
+  background-position: top;  
+  background-attachment: fixed;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%;
+} 
 
 
+#nosotros h1 {
+  font-size: 75px;  
+  margin-bottom: 0; 
+  font-weight: bold;
+  color: #4D4D4D;
+} 
+
+#nosotros h2 {
+  font-size: 45px; 
+  color: #0a8c41; 
+  margin-top: 0;
+}  
+
+#nosotros h3 { 
+  display: inline-block;
+  font-weight: bold; 
+  color: #4D4D4D; 
+  margin-right: 10px; 
+
+} 
+
+#nosotros .underline { 
+  border-bottom: 1.5px solid #0a8c41 ;
+}
+
+#nosotros p {
+  font-size: 18px; 
+  color: #949494; 
+  font-weight: 300;
+}  
+
+#nosotros .crop {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/Fondo_Nosotros01_Crop.png)  ;  
+  background-repeat: no-repeat; 
+  background-position: top; 
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%; 
+}
+
+#habilidades {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  background-image:  url(../img/Img_Nosotros_01.jpg)  ; 
+  background-repeat: no-repeat; 
+  background-position: top;  
+  background-attachment: fixed;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%;
+} 
+
+#habilidades .crop {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  width: 100%; 
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/Fondo_Nosotros02_Crop.png)  ;  
+  background-repeat: no-repeat; 
+  background-position: top; 
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%; 
+} 
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px; 
+  width: 756px; 
+  height: 760px;
+
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777; 
+  min-width: 556px;
+  width: 756px; 
+  height: 760px;
+
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 556px;
+  width: 756px; 
+  height: 760px;
+
+}
+ 
+ #habilidades h1 {
+  font-size: 75px;  
+  margin-bottom: 0; 
+  font-weight: bold;
+  color: #4D4D4D;
+} 
+
+#habilidades h2 {
+  font-size: 45px; 
+  color: #0a8c41; 
+  margin-top: 0;
+} 
+
+
+#habilidades p {
+  font-size: 18px; 
+  color: #949494; 
+  font-weight: 300;
+}  
+
+#habilidades .personal {
+}
