@@ -382,7 +382,7 @@ margin-top: 0;
 
 #proyectos h1 {
 	font-size: 75px;  
-  	margin-bottom: 0; 
+  	margin-bottom: 0;  
   	font-weight: bold;
   	color: #4D4D4D; 
   	margin-top: 150px;
@@ -391,6 +391,133 @@ margin-top: 0;
 #proyectos h2 {
   font-size: 45px; 
   color: #0a8c41; 
-  margin-top: 0;
+  margin-top: 0; 
+  margin-bottom: 30px;
+} 
+
+
+#proyectos .mensaje {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  width: 100%; 
+  height: 100%;  
+  align-items: center;
+  justify-content: center;
+  background-image:  url(../img/transparencia.png) , url(../img/Fondo_4-100.jpg) ; 
+  background-repeat: no-repeat; 
+  background-position: top;  
+  background-attachment: fixed;
+  -webkit-background-size: 100% 100%; 
+  -moz-background-size: 100% 100%; 
+  -o-background-size: 100% 100%; 
+  background-size: 100% 100%; 
+
+} 
+
+#proyectos .mensaje:before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 117, 53, 0.7);
+}  
+
+#proyectos .mensaje h1 {
+	font-size: 45px; 
+	color:white; 
+	margin-bottom: 100px; 
+
 }
 
+#compromiso h1 {
+	font-size: 75px;  
+  	margin-bottom: 0;  
+  	font-weight: bold;
+  	color: #4D4D4D; 
+  	margin-top: 150px;
+} 
+
+#compromiso h2 {
+  font-size: 45px; 
+  color: #0a8c41; 
+  margin-top: 0; 
+  margin-bottom: 30px;
+} 
+
+#compromiso .compromiso-img {
+	margin-top: 150px; 
+	margin-left: 150px;
+} 
+
+#compromiso p {
+	font-size: 20px; 
+	color: #949494; 
+  	font-weight: 300; 
+  	margin-bottom: 20px; 
+  	margin-top: 20px;
+}
+#presencia h1 {
+	font-size: 75px; 
+	color:#0a8c41; 
+	font-weight: bold; 
+	margin-bottom: 0;  
+	margin-top: 150px; 
+}  
+
+#presencia h2 {
+	font-size: 45px; 
+	color: #4D4D4D; 
+	margin-top: 0; 
+	margin-bottom: 30px;
+}   
+#presencia .sepa {
+	margin-top: 30px; 
+	margin-bottom: 100px;
+}
+
+#presencia .l1 {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+} 
+
+#presencia .p1:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+} 
+#presencia .p2:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p3:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p4:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p5:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p6:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p7:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p8:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+#presencia .p9:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+} 
+#presencia .p10:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
