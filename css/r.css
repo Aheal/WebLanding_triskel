@@ -1,0 +1,78 @@
+
+@media screen and (max-width: 425px)
+{
+	#intro 
+	{
+    	background: grey;
+	}  
+
+	#nosotros h1 {
+		font-size: 65px;
+	} 
+
+	#nosotros h2 {
+		font-size: 35px;
+	} 
+
+	#habilidades h1 {
+		font-size: 45px;
+	} 
+
+	#habilidades h2 {
+		font-size: 25px;
+	}  
+	#servicios {
+		background:grey;
+	}
+	#servicios h1 {
+   		font-size: 65px;
+	} 
+	#servicios h3 {
+   		font-size: 15px;
+	} 
+	#proyectos h1 {
+    	font-size: 65px;
+	} 
+	#proyectos h2 {
+    	font-size: 35px;
+	}  
+	#proyectos .mensaje{
+		background : #0a8c41; 
+		opacity: .7;
+	}
+	#proyectos .mensaje h1 {
+    	font-size: 45px;
+	    font-weight: 300;
+	    color: white;
+	    margin-bottom: 100px;
+	    margin-right: 0px;
+	    margin-left: 0px;
+	} 
+	#compromiso h1 {
+    	font-size: 55px;
+	} 
+	#compromiso h2 {
+    	font-size: 25px;
+	}  
+	#presencia h1 {
+    	font-size: 55px;
+	}
+	#presencia h2 {
+    	font-size: 35px;
+	}
+	#contacto .contacto-body {
+		background:grey;
+	}
+	#contacto h1 {
+	    font-size: 55px;
+	} 
+	#contacto h3 {
+	    font-size: 20px;
+	}
+} 
+
+@media screen and (max-width: 445px) {
+    #hide {
+      display:none;
+    }
+}
