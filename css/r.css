@@ -1,11 +1,6 @@
 
 @media screen and (max-width: 425px)
 {
-	#intro 
-	{
-    	background: grey;
-	}  
-
 	#nosotros h1 {
 		font-size: 65px;
 	} 
@@ -21,9 +16,7 @@
 	#habilidades h2 {
 		font-size: 25px;
 	}  
-	#servicios {
-		background:grey;
-	}
+	
 	#servicios h1 {
    		font-size: 65px;
 	} 
@@ -36,10 +29,7 @@
 	#proyectos h2 {
     	font-size: 35px;
 	}  
-	#proyectos .mensaje{
-		background : #0a8c41; 
-		opacity: .7;
-	}
+	
 	#proyectos .mensaje h1 {
     	font-size: 45px;
 	    font-weight: 300;
@@ -49,7 +39,7 @@
 	    margin-left: 0px;
 	} 
 	#compromiso h1 {
-    	font-size: 55px;
+    	font-size: 45px;
 	} 
 	#compromiso h2 {
     	font-size: 25px;
@@ -60,19 +50,35 @@
 	#presencia h2 {
     	font-size: 35px;
 	}
-	#contacto .contacto-body {
-		background:grey;
-	}
 	#contacto h1 {
-	    font-size: 55px;
+	    font-size: 45px;
 	} 
 	#contacto h3 {
 	    font-size: 20px;
 	}
 } 
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 1000px) {
     #hide {
       display:none;
     }
+} 
+
+@media screen and (max-width: 1000px)
+{ 	
+	#intro 
+	{
+    	background: grey;
+	}  
+
+	#servicios {
+		background:grey;
+	}
+	#proyectos .mensaje{
+		background : #0a8c41; 
+		opacity: .7;
+	}
+	#contacto .contacto-body {
+		background:grey;
+	}
 }

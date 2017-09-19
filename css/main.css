@@ -341,6 +341,11 @@ font-size: 18px;
 	position: absolute; 
 	top: 50px; 
 	left: 86px;
+} 
+
+#servicios p {
+  font-size: 10px; 
+  font-weight: 300;
 }
 
 .overlay {
@@ -582,7 +587,8 @@ font-size: 18px;
     background-color: #F3F3F3;
 	padding: 10px 40px 60px;
 	margin: 10px 0px 60px; 
-	margin-right: 0px;
+	margin-right: 0px;  
+  height: auto;
 }  
 
 .form-area1
@@ -591,11 +597,14 @@ font-size: 18px;
 	padding: 10px 40px 60px;
 	margin: 10px 0px 60px; 
 	margin-right: 0px; 
-  margin-bottom: 50px;
+  margin-bottom: 50px;  
+  height: auto;
+
 }  
 
 .l2 {
-	margin-right: -30px;
+	margin-right: -30px; 
+    height: auto;
 }
 
 .form-title{
@@ -614,5 +623,15 @@ font-size: 18px;
 
 .form-control{
   background-color: #F3F3F3;
+} 
+
+
+
+#contacto .row {
+  display: flex; /* equal height of the children */ 
 }
 
+.col{
+  flex: 1; /* additionally, equal width */
+  padding: 1em;
+}
