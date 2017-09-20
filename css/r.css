@@ -2,11 +2,11 @@
 @media screen and (max-width: 425px)
 {
 	#nosotros h1 {
-		font-size: 65px;
+		font-size: 45px;
 	} 
 
 	#nosotros h2 {
-		font-size: 35px;
+		font-size: 25px;
 	} 
 
 	#habilidades h1 {
@@ -23,11 +23,15 @@
 	#servicios h3 {
    		font-size: 15px;
 	} 
+	#servicios p {
+  		font-size: 5px; 
+  		font-weight: 300;
+	}
 	#proyectos h1 {
-    	font-size: 65px;
+    	font-size: 45px;
 	} 
 	#proyectos h2 {
-    	font-size: 35px;
+    	font-size: 25px;
 	}  
 	
 	#proyectos .mensaje h1 {
