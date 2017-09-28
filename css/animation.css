@@ -1,0 +1,76 @@
+ .nepe {
+	animation: nepe 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes nepe {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}  
+ .nepe1 {
+	animation: nepe1 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; 
+}
+@keyframes nepe1 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
+ .nepe2 {
+	animation: nepe 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes nepe2 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+ .nepe3 {
+	animation: nepe3 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@keyframes nepe3 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.expand {
+	animation: expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+} 
+
+@keyframes expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.in {
+	animation: in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+} 
+
+@keyframes in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
