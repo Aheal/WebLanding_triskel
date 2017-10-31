@@ -1,0 +1,493 @@
+<?php
+	if (isset($_POST["submit"])) {
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$from = 'Demo Contact Form'; 
+		$to = 'alejandroalamina@hotmail.com'; 
+		$subject = 'Message from Contact Demo ';
+		
+		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+		// Check if name has been entered
+		if (!$_POST['name']) {
+			$errName = 'Please enter your name';
+		}
+		
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+		
+		//Check if message has been entered
+		if (!$_POST['message']) {
+			$errMessage = 'Please enter your message';
+		}
+        // If there are no errors, send the email
+        if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+            if (mail ($to, $subject, $body, $from)) {
+                $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+            } else {
+                $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+            }
+            }
+        }
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Triskel</title> 
+	<meta name="description" content="">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <link rel="icon" type="img/png" href="img/Triskel_Logo16x16.png">
+
+
+    <!-- Bootstrap Core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css">
+
+    <!-- Plugins CSS -->
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate/animate.css" rel="stylesheet" type="text/css"> 
+
+    <!-- Main CSS -->
+    <link href="css/main.css" rel="stylesheet" type="text/css"> 
+    <link href="css/r.css" rel="stylesheet" type="text/css"> 
+    <link href="css/animation.css" rel="stylesheet" type="text/css">  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    
+ 
+
+</head>
+<body> 
+	<header>
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Menú</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> <!--/navbar header-->
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav nav-justified">
+                            <li><a data-scroll='' href="#nosotros">Nosotros</a></li>
+                            <li><a data-scroll='' href="#habilidades">Habilidades</a></li>
+                            <li><a data-scroll='' href="#servicios">Servicios</a></li>
+                            <li><a data-scroll='' href="#proyectos">Proyectos</a></li>
+                            <li><a data-scroll='' href="#compromiso">Certificados</a></li> 
+                            <li><a data-scroll='' href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div> <!--/container-->
+            </nav>
+        </header> 
+
+	  <!-- Intro Section -->
+    <section id="intro">
+        <div class="intro-body text-center">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-12 intro-content nepe"> 
+                    	<br> 
+                    	<br>
+                        <img class="intro-img img-responsive center-block above-all" src="img/Triskel_Aire_Acondicionado.png" alt=""/>
+                        <!-- //.logo -->
+
+                        <div class="page-scroll above-all">
+                            <a data-scroll='' href="#nosotros" class="fa fa-chevron-down" style="color:#0a8c41;"></a>
+                        </div>
+  
+                        <!-- //.page-scroll -->
+                    </div>
+                    <!-- //.intro-content -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.container -->
+        </div>
+        <!-- //.intro-body -->
+    </section>
+    <!-- //End Intro Section -->  
+    <!-- Begin Nosotros --> 
+    <section id="nosotros"> 
+    	<div class="nosotros-body container-fluid crop">
+    		<div class="container "> 
+    			<div class="row">
+                    <br>
+                    <br>
+                    <br>    
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <h1 class="anim1">NOSOTROS</h1> 
+                        <h2 class="anim2">BRINDAMOS SOLUCIONES</h2> 
+                        <br>
+                        <br>
+                        <p class="anim1">Somos TRISKEL Aire Acondicionado, una empresa integral que ofrece los servicios de Proyecto, Instalación y Mantenimiento en sistemas de aire
+                            acondicionado, con personal técnico de más de 25 años de experiencia.
+                        </p> 
+                        <br>
+                        <p class="anim1">Contamos con personal y técnicos altamente capacitados con el fin de estar más cerca de nuestros clientes y brindarle servicio a su necesidad de
+                        confort, cubriendo los diferentes mercados tales como: oficinas, hoteles, industria, residencial, sucursales bancarias, etc...
+                        </p>      
+                    </div> 
+    			</div>
+                <div class="row">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-6 space">
+                        <h3 class="underline anim2">NUESTRA</h3><h3 class="anim2">MISIÓN</h3>     
+                        <p class="anim1">Optimizar resultados, garantizando la completa satisfacción
+                        de nuestros clientes y contribuyendo al cuidado del medio ambiente.
+                        </p> 
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="underline anim2">NUESTRA</h3><h3 class="anim2">VISIÓN</h3>
+                        <p class="anim1">Ser el proveedor más confiable a nivel nacional dentro de la industria
+                            de servicios de mantenimiento.
+                        </p>   
+                    </div> 
+                </div>
+    		</div> 
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    	</div>
+    </section>
+    <!-- End Nosotros --> 
+    <!-- Begin Habilidades --> 
+    <section id="habilidades">
+     <div class="container-fluid crop">
+        <div class = "container col-lg-12">
+          <div id="hide" class="col-lg-6">
+            <!-- Carousel
+            ================================================== -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img class="first-slide" src="img/Img_01-100.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img class="second-slide" src="img/Img_02-100.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img class="third-slide" src="img/Img_03-100.jpg" alt="Third slide">
+                </div> 
+                <div class="item">
+                  <img class="third-slide" src="img/Img_04-100.jpg" alt="Fourth slide">
+                </div>
+                <div class="item">
+                  <img class="third-slide" src="img/Img_05-100.jpg" alt="Fifth slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              </a>
+            </div><!-- /.carousel -->
+          </div>
+            <div class="col-lg-6 personal"> 
+                <h1 id="message"></h1> 
+                <h2 id="message2"></h2> 
+                <div class="ex1">
+                	<p id="message3" ></p>
+                </div> 
+            </div>
+        </div>
+     </div>
+    </section> 
+    <!-- End habilidades --> 
+    <!-- Begin servicios-->
+    <section id="servicios">
+       <div class="servicios-body text-center">
+       <div class="container">
+       	<div class="row">
+       		<div class="col-md-12"> 
+       			<h1 class="anim2">SERVICIOS</h1> 
+       			<h3 class="anim1">Sistemas de Aire Acondicionado e Instalaciones Eléctricas e Hidrosanitarias.</h3>
+       			<h3 class="anim1">Con especialidad en Equipos de Aire Acondicionado de Alto Tonelaje.</h3>
+       			<br>
+       			<br>
+       			<br>
+       			<br> 
+       		</div> 
+       	<div class="row">
+       			<div class="col-md-3 col-xs-6 parent">
+       				<img id="nepe" class= "servicios-img center-block  anim3 " src="img/Servicio_Instalacion_AiresAcondicionados.png">  
+       				<div class="overlay">
+					    <div class="text">
+					    	<p>Equipos de Alto Tonelaje: York, Carrier, McQuay, Trane y Otros.</p>	
+					    	<p>Enfriadores de agua: Scroll, Tornillo, Reciprocrante y Centrifugo</p> 
+					    	<p>Sistemas de Absorción/Volumen Variable: Residencial Comercial y de Procesos</p>
+					    </div>
+					 </div>
+       			</div>  
+       			<div class="col-md-3 col-xs-6 parent1">
+       				<img class= "servicios-img center-block anim4 " src="img/Servicio_Prevencion_AiresAcondicionados.png"> 
+       				<div class="overlay">
+					    <div class="text">
+					    	<p>Análisis de aceite de tipo espectrométrico.</p>
+					    	<p>Análisis de refrigerante</p>
+					    	<p>Análisis de calidad del agua.</p>
+					    	<p>Pruebas de Eddie Current.</p> 
+					    	<p>Calibración de caudal .</p>
+					    	<p>Termografías y Análisis de Redes en Sistemas Eléctricos.</p>
+					    </div>
+					 </div>
+       			</div> 
+       			<div class="col-md-3 col-xs-6 parent2">
+       				<img class= "servicios-img center-block anim5" src="img/Servicio_Mantenimiento_AiresAcondicionados.png"> 
+       				<div class="overlay">
+					    <div class="text">
+					    	<p>Rendimiento Energético de sus sistemas de HVAC.</p> 
+					    	<p>Actualización de software para equipos con controladores computarizados .</p>
+					    	<p>Recargas de software.</p>
+					    	<p>Automatización de sistemas HVAC para su Monitoreo remoto.</p>
+					    </div>
+					 </div>
+       			</div>  
+       			<div class="col-md-3 col-xs-6 parent3 ">
+       				<img class= "servicios-img center-block anim6" src="img/Servicio_Reparacion_AiresAcondicionados.png">
+       				<div class="overlay">
+					    <div class="text">
+					    	<p>Overhaul para compresores tornillo o centrífugos.</p> 
+					    	<p>Reconstrucción de compresores reciprocantes.</p>
+					    	<p>Retrofit de refrigerante</p>
+					    	<p>Reparaciones de Tableros SSS</p> 
+					    	<p>VSD y/o el connamiento de gas refrigerante.</p>
+					    </div>
+					 </div>
+       			</div>
+       	</div>  		 
+       	</div>  
+       	</div>
+       </div> 
+    </section>
+    <!-- End servicios>
+	<!-- Begin Proyectos -->
+	<section id="proyectos">
+		<div class="proyectos-body text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="anim1">NUESTROS</h1> 
+						<h2 class="anim2">PROYECTOS</h2> 
+					</div>
+				</div> 
+				<div class="row">
+					<div class="owl-carousel owl-theme">
+					    <div class="item"><img class="proyectos-img" src="img/P1.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P2.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P3.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P4.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P5.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P6.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P7.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P8.jpg"></div>
+					    <div class="item"><img class="proyectos-img" src="img/P9.jpg"></div>
+					</div>
+				</div> 
+			</div>
+			<div class="container-fluid mensaje ">
+					<div><h1 class="">“Mostramos en todo momento fidelidad,
+							orgullo y pertenencia por nuestra empresa.”</h1>
+					</div>
+			</div>
+		</div>
+	</section> 
+	<!--End Proyectos --> 
+	<!-- Begin Compromiso -->
+	<section id="compromiso">
+		<div class="compromiso-body container-fluid">
+			<div class="container col-lg-12">
+				<div id="hide" class="col-lg-6">  
+					<img  class="compromiso-img" src="img/Triskel_Compromiso_Clientes.png">
+				</div> 
+				<div class="col-lg-6 text-center">
+					<h1>COMPROMISO</h1> 
+					<h2>CON NUESTROS CLIENTES</h2> 
+					<p>Operacion y Mtto. a unidades York YCAS.</p> 
+					<p>Absorption Refrigeration Cycle-Single Stage.</p> 
+					<p>Agentes Patógenos Transportados por la Sangre.</p> 
+					<p>Comunicación de Riesgos: Su Red de Seguridad.</p> 
+					<p>La entrada a un espacio confinado: maniobras internas.</p> 
+					<p>Operaciones de aparejamiento.</p> 
+					<p>La Seguridad en los Andamios</p> 
+					<p>Seguridad con la Electricidad: Cuidado con la Picada.</p> 
+					<p>Seguridad en la Soldadura: Medidas de Seguridad de Trabajos en Caliente.</p> 
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!--End Compromiso-->
+	<!-- Begin Presencia --> 
+	<section id="presencia">
+		<div class="presencia-body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 class="anim1">PRESENCIA</h1> 
+						<h2 class="anim2">EN TODO MEXICO</h2>
+					</div>
+				</div> 
+				<div class="row sepa">
+					<div class="col-xs-1"></div> 
+					<div class="col-xs-2"><img class="l1 p1 img-responsive img-center" src="img/Client_SanPablo.png"></div> 
+					<div class="col-xs-2"><img class="l1 p2 img-responsive img-center" src="img/Client_Liverpool.png"></div> 
+					<div class="col-xs-2"><img class="l1 p3 img-responsive img-center" src="img/Client_Scotianbank.png"></div> 
+					<div class="col-xs-2"><img class="l1 p4 img-responsive img-center" src="img/Client_PalaciodeHierro.png"></div> 
+					<div class="col-xs-2"><img class="l1 p5 img-responsive img-center" src="img/Client_Telcel.png"></div>
+				</div> 
+				<div class="row sepa">
+					<div class="col-xs-1"></div> 
+					<div class="col-xs-2"><img class="l1 p1 img-responsive img-center" src="img/Client_TetraPak.png"></div> 
+					<div class="col-xs-2"><img class="l1 p2 img-responsive img-center" src="img/Client_Sears.png"></div> 
+					<div class="col-xs-2"><img class="l1 p3 img-responsive img-center" src="img/Client_HolidayInn.png"></div> 
+					<div class="col-xs-2"><img class="l1 p4 img-responsive img-center" src="img/Client_Bancomer.png"></div> 
+					<div class="col-xs-2"><img class="l1 p5 img-responsive img-center" src="img/Client_Deacero.png"></div>
+				</div>
+			</div>
+		</div>
+	</section> 
+	<!-- End Presencia --> 
+	<!-- Begin Contacto -->
+	<section id="contacto">
+    <div class="espacio"> 
+        <h4 style="color:#0a8c41;">dnjnfasjfnskjdfnajsdnfjasndfjsadfjdnfsajdf</h4>
+    </div>
+		<div class="contacto-body container-fluid"> 
+			<div class="col-md-12 text-center">
+				<h1>CONTÁC<span>TANOS</span></h1> 
+				<h3>En Triskel es un placer atenderte.</h3>
+			</div> 
+		</div> 
+		<div class="container"> 
+		<div class="">
+			<div class="col-md-8 l2 ">
+			<div class="form-area ">  
+	        <form role="form">
+	        <br style="clear:both">
+	                    <h3 style="margin-bottom: 25px; text-align: left; color:black; font-weight: bold;">ENVIANOS UN MENSAJE</h3>
+	    				<div class="form-group">
+							<input type="text" class="form-control" id="name" name="name" placeholder="NOMBRE" required> 
+                            <?php echo "<p class='text-danger'>$errName</p>";?>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="email" name="email" placeholder="EMAIL" required> 
+                            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+						</div>
+	                    <div class="form-group">
+	                    <textarea class="form-control" type="textarea" id="message" placeholder="MENSAJE" maxlength="140" rows="7"></textarea> 
+                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+	                    </div>
+	            
+	        <button type="button" id="submit" name="submit" value="Send" class="btn pull-left">ENVIAR</button>
+	        </form>
+
+			</div>
+		</div> 
+		<div class="col-md-4">
+			<div class="form-area1 ">  
+	        <form role="form">
+	        <br style="clear:both">
+	                    <h3 style="margin-bottom: 25px; text-align: left; color:black; font-weight: bold;">CONTACTO</h3> 
+	                    <div >
+	                    	<img class="l3" src="img/Ic_Phone.png"> 
+	                    	<p class="l3">Ing. Aldo Camacho</p> 
+	                    </div> 
+	                    <div >
+	                    	<img class="l3" style="opacity: 0;" src="img/Ic_Phone.png"> 
+	                    	<p class="l3">+52 (55) 3137 7532</p> 
+	                    </div>  
+	                    <div >
+	                    	<img class="l3" src="img/Ic_Mail.png"> 
+	                    	<p class="l3">acamacho@triskel.work</p> 
+	                    </div> 
+	                    <div >
+	                    	<img class="l3" src="img/Ic_Work.png"> 
+	                    	<p class="l3">(55) 4426 5456</p> 
+	                    </div>
+	                    <div >
+	                    	<img class="l3" style="opacity: 0;" src="img/Ic_Phone.png"> 
+	                    	<p class="l3">(55) 4426 7077</p> 
+	                    </div>
+	                    <div >
+	                    	<img class="l3" src="img/Ic_Loc.png"> 
+	                    	<p class="l3">Cuarzo #143, Fracc. El Dorado </p> 
+	                    </div> 
+	                    <div >
+	                    	<img class="l3" style="opacity: 0;" src="img/Ic_Phone.png"> 
+	                    	<p class="l3">CP. 54980, Tultepec, Edo. Méx.</p> 
+	                    </div> 
+	                    <div >
+	                    	<img class="l3" src="img/Ic_Calendar.png"> 
+	                    	<p class="l3">Lunes-Viernes: 08:00 a 18:00 hrs</p> 
+	                    </div> 
+	                    <div >
+	                    	<img class="l3" style="opacity: 0;" src="img/Ic_Phone.png"> 
+	                    	<p class="l3">Sabados: 08:00 a 14:00 hrs</p> 
+	                    </div>  
+                        <div >
+	                    	<img class="l3" style="opacity: 0;" src="img/Ic_Phone.png"> 
+	                    	<p class="l3"><strong>Atencion 24/7</strong></p> 
+	                    </div> 
+
+	        </form>
+			</div>
+		</div>
+		</div> 
+    </div>
+	</section>  
+	
+   	<!-- End Contacto --> 
+
+    <!-- Latest compiled and minified JavaScript --> 
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+    <script type="text/javascript" src="js/waypoints.min.js"></script> 
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script> 
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+	</script> 
+	<script>
+        $(document).ready(function(){ 
+
+        });
+	</script>  
+</body>
+</html>

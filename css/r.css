@@ -72,17 +72,17 @@
 { 	
 	#intro 
 	{
-    	background: grey;
+    	background: url(../img/Fondo_1_Tablet.jpg);
 	}  
 
 	#servicios {
-		background:grey;
+		background: grey;
 	}
 	#proyectos .mensaje{
 		background : #0a8c41; 
 		opacity: .7;
 	}
 	#contacto .contacto-body {
-		background:grey;
+		background: black;
 	}
 }

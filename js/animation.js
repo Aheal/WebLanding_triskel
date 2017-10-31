@@ -10,7 +10,7 @@ $(document).ready(function(){
 		].reverse(); 
 		 
 		mess= [ 
-       "En Triskel nuestro Departamento de Ingeniería Especializada, está formado por personal egresado de dos de las mejores firmas internacionales: YORK Commercial & Industrial HVAC Systems, así como el Departamento de Servicio de Johnson Controls México sección Building Efficiency.",
+       "En Triskel nuestro Departamento de Ingeniería Especializada, está formado por personal egresado de dos de las mejores firmas internacionales: YORK Commercial & Industrial HVAC Systems, así como del Departamento de Servicio de Johnson Controls México sección Building Efficiency.",
 	    "Aprendemos de la experiencia para diseñar e implementar soluciones en los proyectos y nos mantenemos en constante capacitación para poder estar al día en la evolución tecnológica.",
 	    "Nos comportamos, expresamos y vivímos el día a día con rectitud, honradez y veracidad en todos nuestros actos, de acuerdo con las reglas y valores aceptados por la sociedad como: objetividad, respeto, honestidad, responsabilidad, calidad, y compromiso",
 	    "Esta filosofía es el resultado de 10 años de observación y análisis del trabajo en Sinergia entre campo y oficina durante el proceso de mantenimiento a equipos de HVAC & R. Como resultado esto ayuda en el incremento de la vida útil de los equipos así como la reducción de gastos innecesarios.",
@@ -18,7 +18,7 @@ $(document).ready(function(){
 		].reverse(); 
     } 
     // change content of message, fade in, wait, fade out and continue with next message
-    	$('#message').html(messages.pop()).fadeIn(500).delay(4000).fadeOut(500, nextMsg); 
+    	$('#message').html(messages.pop()).fadeIn(500).delay(7000).fadeOut(500, nextMsg); 
 	};
 	// list of messages to display 
 	function nepe() { 
@@ -32,7 +32,7 @@ $(document).ready(function(){
 	    	"CON ALIANZAS ESTRATÉGICAS."
 			].reverse();
 		}
-		$('#message2').html(messa.pop()).fadeIn(500).delay(4000).fadeOut(500, nepe); 
+		$('#message2').html(messa.pop()).fadeIn(500).delay(7000).fadeOut(500, nepe); 
 	}; 
 	function nep() { 
 		if(mess.length == 0)
@@ -45,7 +45,7 @@ $(document).ready(function(){
 	    	"Contamos con la experiencia necesaria para dar soporte, control, suministros y refacciones en marcas reconocidas como Dunham Bush, Carrier Totaline, Belimo, Source One, Climaproyectos y McQuay."
 			].reverse(); 
 		}
-		$('#message3').html(mess.pop()).fadeIn(500).delay(4000).fadeOut(500, nep); 
+		$('#message3').html(mess.pop()).fadeIn(500).delay(7000).fadeOut(500, nep); 
 	};
 	var messages = [ 
        "PERSONAL EN",
